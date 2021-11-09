@@ -1,7 +1,7 @@
 export interface game {
     title: string;
     summary: string;
-    releaseKeys: string[];
+    ownedReleases: string[];
     criticsScore: number | null;
     developers: string[];
     publishers: string[];
@@ -12,5 +12,5 @@ export interface game {
     backgroundImage: string;
     squareIcon: string;
     verticalCover: string;
-    releases: string[];
+    allReleases: string[];
 }

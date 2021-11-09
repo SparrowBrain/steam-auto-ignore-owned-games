@@ -1,4 +1,4 @@
 export interface gameToIgnore {
     title: string;
-    steamLink: string;
+    steamUrl: string;
 }

@@ -27,7 +27,7 @@ const dbRowToGame = (row: SqlValue[], columns: string[]) => {
         summary: parseGamePiece(row, columnIndexFromName(columns, 'summary')).summary
             .split('\r\n').join('\\n')
             .split('\n').join('\\n'),
-        releaseKeys: releaseKeys,
+        ownedReleases: releaseKeys,
         criticsScore: metadata.criticsScore,
         developers: metadata.developers,
         publishers: metadata.publishers,
@@ -38,7 +38,7 @@ const dbRowToGame = (row: SqlValue[], columns: string[]) => {
         backgroundImage: images.background,
         squareIcon: images.squareIcon,
         verticalCover: images.verticalCover,
-        releases: parseGamePiece(row, columnIndexFromName(columns, 'releases')).releases
+        allReleases: parseGamePiece(row, columnIndexFromName(columns, 'releases')).releases
     }
 
     return game;

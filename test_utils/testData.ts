@@ -9,10 +9,10 @@ export const testGame: game = {
     genres: [],
     publishers: [],
     releaseDate: null,
-    releaseKeys: ['abc_abc'],
+    ownedReleases: ['abc_abc'],
     squareIcon: '',
     summary: '',
     themes: [],
     verticalCover: '',
-    releases: ['abc_abc'],
+    allReleases: ['abc_abc'],
 };
